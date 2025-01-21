@@ -7,7 +7,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import FeaturesSection from "../Components/FeatureSec";
 
 export default function Cart() {
-  // Initial product data
+ 
   const initialProduct = {
     name: "Asgaard sofa",
     price: 250000,
@@ -15,10 +15,10 @@ export default function Cart() {
     quantity: 1,
   };
 
-  // State for the product
+  
   const [product, setProduct] = useState(initialProduct);
 
-  // Handle quantity change
+  
   const handleQuantityChange = (change:any) => {
     if (product.quantity + change >= 1) {
       setProduct({
@@ -28,9 +28,9 @@ export default function Cart() {
     }
   };
 
-  // Calculate the subtotal and total
+
   const subtotal = product.price * product.quantity;
-  const total = subtotal; // You can add taxes or shipping if needed
+  const total = subtotal; 
 
   return (
     <>
@@ -57,7 +57,7 @@ export default function Cart() {
       </div>
 
       <div className="container flex flex-col md:flex-row justify-start mt-2">
-        {/* Left Section */}
+       
         <div className="flex flex-col w-full md:w-[70%]">
           <div className="flex justify-center items-center gap-6 md:gap-24 w-full md:w-[850px] h-[55px] mt-16 ml-0 md:ml-24 font-poppins text-[16px] bg-[#F9F1E7]">
             <h2>Product</h2>
@@ -101,7 +101,7 @@ export default function Cart() {
           </div>
         </div>
 
-        {/* Right Section */}
+      
         <div className="bg-[#F9F1E7] w-full md:w-[393px] h-auto md:h-[390px] p-6 mt-10 md:mt-16 mb-6 flex flex-col items-center">
           <h2 className="font-semibold font-poppins text-[32px]">Cart Totals</h2>
 
@@ -116,7 +116,7 @@ export default function Cart() {
           </div>
 
           <button className="mt-5 rounded-xl font-poppins text-[20px] border-[#000000] border-[1px] h-[58.95px] p-2 w-[222px]">
-            Check Out
+           <a href="/CheckOut"> Check Out</a>
           </button>
         </div>
       </div>
