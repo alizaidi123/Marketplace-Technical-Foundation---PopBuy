@@ -15,10 +15,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold">Navbar</h4>
             <ul className="space-y-1">
-              <li>Home</li>
-              <li>Shop</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li> <a href="/">Home</a></li>
+              <li><a href="/Shop">Shop</a></li>
+              <li><a href="/Blog">Blog</a></li>
+              <li><a href="/Contact1">Contact</a></li>
             </ul>
           </div>
 
