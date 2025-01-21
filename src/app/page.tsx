@@ -48,7 +48,7 @@ const Home = () => {
       <div className="container mx-auto mt-4">
         <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4">
           {currentProducts.map((product) => (
-            <ProductCard key={product._id} params={{ title: product.title }} />
+            <ProductCard key={product.title} params={{ title: product.title }} />
           ))}
         </div>
       </div>
