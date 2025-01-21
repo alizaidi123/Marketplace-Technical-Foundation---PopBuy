@@ -157,7 +157,7 @@ export default function CheckOut() {
           </div>
 
           <button className="mt-6 rounded-xl font-poppins text-[20px] bg-[#b88e2F] text-white py-2 px-6 hover:bg-[#916e26] w-full">
-            Proceed to Payment
+            <a href="/P2P">Proceed to Payment</a>
           </button>
         </div>
       </div>
