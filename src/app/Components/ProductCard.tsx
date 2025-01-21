@@ -6,7 +6,7 @@ import { client } from "@/sanity/lib/client";
 
 interface ProductCardProps {
   params: {
-    title: string;
+    title: any;
   };
 }
 
