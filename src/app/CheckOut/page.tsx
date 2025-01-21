@@ -8,28 +8,28 @@ export default function CheckOut() {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   const handlePlaceOrder = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevent form submission
+    e.preventDefault(); 
     const form = e.currentTarget;
 
     if (form.checkValidity()) {
-      setIsPopupVisible(true); // Show the popup if all fields are valid
+      setIsPopupVisible(true); 
     } else {
-      form.reportValidity(); // Trigger browser's native validation feedback
+      form.reportValidity(); 
     }
   };
 
   const handleProceedToPayment = () => {
-    setIsPopupVisible(false); // Close the popup
-    window.location.href = "/payment"; // Redirect to the payment page
+    setIsPopupVisible(false); 
+    window.location.href = "/P2P"; 
   };
 
   const handleCancel = () => {
-    setIsPopupVisible(false); // Close the popup
+    setIsPopupVisible(false); 
   };
 
   return (
     <>
-      {/* Banner Section */}
+      
       <div className="relative">
         <div
           className="w-full h-[316px] bg-cover bg-center opacity-60"
@@ -54,12 +54,12 @@ export default function CheckOut() {
         </div>
       </div>
 
-      {/* Checkout Form */}
+      
       <div className="container flex flex-col items-center justify-center mt-10">
         <form
           className="bg-[#F9F1E7] p-6 md:p-10 rounded-lg w-full md:w-[50%]"
           onSubmit={handlePlaceOrder}
-          noValidate // Disables native browser validation styling
+          noValidate 
         >
           <h2 className="font-semibold font-poppins text-[32px] mb-6 text-center">
             Shipping Information
@@ -107,7 +107,7 @@ export default function CheckOut() {
         </form>
       </div>
 
-      {/* Popup Confirmation */}
+    
       {isPopupVisible && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-[90%] md:w-[50%] text-center">
