@@ -1,0 +1,7 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level
+TC_001,Product Listing Page,Navigate to homepage and check products,Products should be displayed correctly,Default image displayed instead of original product image,Failed,High
+TC_002,Search Functionality,Search for a product and check results,Relevant products should be returned,Passed,Passed,Medium
+TC_003,Cart Operations,Add item to cart and verify quantity change,Cart should update with correct item count,Passed,Passed,High
+TC_004,Dynamic Routing,Insert the Product Name in URL ,Product detail page should load correctly,Passed,Passed,High
+TC_005,Cross-Browser Testing,"Test on Chrome, Firefox, Safari, Edge",Marketplace should render the same across all browsers,Passed,Passed,High
+TC_006,Mobile and Tablet Testing,Test on mobile and tablet devices,Marketplace should be responsive and functional,Passed,Passed,High
